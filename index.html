@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios JavaScript</title>
+    <script> function colorear() {
+        var
+        imagen = document.getElementById('escudo');
+        if(imagen.src.match("escudi")) {
+            imagen.src = "escudoUNAM.jpg";
+        }else{
+            imagen.src = "escudito.jpg";
+        }
+    }
+    </script>
+    <script src="funciones.js"></script>
+</head>
+<body id="cuerpo">
+    <p id="p1">.</p>
+    <script>
+        window.alert("Me encanta que estes en el curso.");
+        document.write('<h1>Hola JavaScript.</h1>');
+        document.getElementById('p1').innerHTML = Date();
+        document.getElementById('p1').innerHTML = 'Me gusto CSS';
+    </script>
+    <button type="button" Onclick = "document.getElementById('p1').innerHTML = 'JavaScript tambi&eacute;n'">Ok</button>
+    <script> function alegrar(){
+        var x = document.getElementById("p1");
+        x.style.fontSize = "25px";
+        x.style.color = "red";
+    }
+    </script>
+    <button type="button" Onclick = "alegrar()">Alegrar.</button>
+    <img id="escudo" width="100px" high="100px" src="escudito.jpg" onclick="colorear()">
+    <p>Teclea un n&uacute;mero peque&ntilde;o:</p> <input type="text" id="numero">
+    <button type="button" onclick="validar()">validar</button>
+    <p id ="mensaje"></p>
+
+    <p>Teclea tu color preferido en ingl&eacute;s:</p> <input type="text" id="colorfondo">
+    <button type="button" onclick="cambiarColor()">Cambiar color</button>
+
+</body>
+</html>
